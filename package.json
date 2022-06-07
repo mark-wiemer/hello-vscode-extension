@@ -10,7 +10,8 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:helloworld.helloWorld"
+        "onCommand:helloworld.helloWorld",
+        "onCommand:helloworld.time"
     ],
     "main": "./out/extension.js",
     "contributes": {
@@ -18,6 +19,10 @@
             {
                 "command": "helloworld.helloWorld",
                 "title": "Hello World"
+            },
+            {
+                "command": "helloworld.time",
+                "title": "Current time"
             }
         ]
     },
