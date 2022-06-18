@@ -20,16 +20,15 @@ Grammar tests focus on the tokenization via the TextMate grammar detailed in [Sy
 
 Syntax Highlighting support follows the official [Syntax Highlight Guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide).
 
-
 This extension...
+
 1. declares that it `contributes` `languages` and `grammars` in `package.json`
 1. defines grammar in YAML for readability (see [Using YAML to write a grammar](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide#tokenization:~:text=USING%20YAML%20TO%20WRITE%20A%20GRAMMAR))
 1. converts YAML grammar to JSON using `npm run compile_grammar`
 
 VS Code...
+
 1. tries to parse relevant files with the grammar using [microsoft/vscode-textmate](https://github.com/Microsoft/vscode-textmate)
-
-
 
 ## Next steps
 
