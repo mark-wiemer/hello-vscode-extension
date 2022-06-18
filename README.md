@@ -20,6 +20,8 @@ Grammar tests focus on the tokenization via the TextMate grammar detailed in [Sy
 
 I want to improve [AutoHotkey Plus Plus](https://github.com/mark-wiemer/vscode-autohotkey-plus-plus), so I'm learning more about TextMate grammars. I plan to convert the existing grammar to YAML soon for readability.
 
+The [Semantic Token Provider](https://code.visualstudio.com/api/references/vscode-api#DocumentSemanticTokensProvider) mentioned in the [Tokenization section of the Syntax Highlight Guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide#tokenization) looks like a promising way to provide detailed tokens as well.
+
 Resources:
 
 -   [Syntax Highlight Guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide)
