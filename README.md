@@ -16,9 +16,24 @@ Unit tests focus on miscellaneous functionality of the app. They're written foll
 
 Grammar tests focus on the tokenization via the TextMate grammar detailed in [Syntax Highlight Guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide)
 
+## Syntax Highlighting
+
+Syntax Highlighting support follows the official [Syntax Highlight Guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide).
+
+
+This extension...
+1. declares that it `contributes` `languages` and `grammars` in `package.json`
+1. defines grammar in YAML for readability (see [Using YAML to write a grammar](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide#tokenization:~:text=USING%20YAML%20TO%20WRITE%20A%20GRAMMAR))
+1. converts YAML grammar to JSON using `npm run compile_grammar`
+
+VS Code...
+1. tries to parse relevant files with the grammar using [microsoft/vscode-textmate](https://github.com/Microsoft/vscode-textmate)
+
+
+
 ## Next steps
 
-I want to improve [AutoHotkey Plus Plus](https://github.com/mark-wiemer/vscode-autohotkey-plus-plus), so I'm learning more about TextMate grammars. I plan to convert the existing grammar to YAML soon for readability.
+I want to improve [AutoHotkey Plus Plus](https://github.com/mark-wiemer/vscode-autohotkey-plus-plus). Right now, I'm focusing on syntax- and semantic-highlighting.
 
 The [Semantic Token Provider](https://code.visualstudio.com/api/references/vscode-api#DocumentSemanticTokensProvider) mentioned in the [Tokenization section of the Syntax Highlight Guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide#tokenization) looks like a promising way to provide detailed tokens as well.
 

@@ -43,7 +43,9 @@
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
-        "compile": "tsc -p ./",
+        "compile": "npm run compile_ts && npm run compile_grammar",
+        "compile_ts": "tsc -p ./",
+        "compile_grammar": "npx js-yaml syntaxes/abc.tmGrammar.yaml > syntaxes/abc.tmGrammar.json",
         "watch": "tsc -watch -p ./",
         "pretest": "npm run compile && npm run lint",
         "lint": "eslint src --ext ts",
