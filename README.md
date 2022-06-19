@@ -34,10 +34,12 @@ VS Code...
 
 I want to improve [AutoHotkey Plus Plus](https://github.com/mark-wiemer/vscode-autohotkey-plus-plus). Right now, I'm focusing on syntax- and semantic-highlighting.
 
+### Semantic token provider
+
 The [Semantic Token Provider](https://code.visualstudio.com/api/references/vscode-api#DocumentSemanticTokensProvider) mentioned in the [Tokenization section of the Syntax Highlight Guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide#tokenization) looks like a promising way to provide detailed tokens as well.
 
-Resources:
+## Resources
 
--   [Syntax Highlight Guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide)
+-   [Syntax Highlight Guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide) is an official guide written by Microsoft
 -   [microsoft/vscode-textmate](https://github.com/Microsoft/vscode-textmate) is the library that tokenizes code via TextMate grammars
--   [PanAeon/vscode-tmgrammar-test](https://github.com/PanAeon/vscode-tmgrammar-test) is recommended by Microsoft to write unit tests for TextMate grammars
+-   [PanAeon/vscode-tmgrammar-test](https://github.com/PanAeon/vscode-tmgrammar-test) is recommended by Microsoft to write tests for TextMate grammars
