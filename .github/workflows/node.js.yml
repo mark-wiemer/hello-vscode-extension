@@ -13,7 +13,8 @@ jobs:
   build:
     strategy:
       matrix:
-        os: [macos-latest, ubuntu-latest, windows-latest]
+        # TODO add macos-latest and fix https://github.com/mark-wiemer/vscode-helloworld/issues/10
+        os: [ubuntu-latest, windows-latest]
         node-version: [16.x]
     runs-on: ${{ matrix.os }}
     steps:
