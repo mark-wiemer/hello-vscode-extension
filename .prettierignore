@@ -1,4 +1,4 @@
-# Also in `.prettierignore`
+# Copied from `.gitignore`
 out
 dist
 node_modules
