@@ -1,0 +1,7 @@
+# EditorConfig is awesome: https://EditorConfig.org
+# This file enables language-specific formatting with Prettier
+# https://prettier.io/docs/en/options.html#tab-width
+# https://github.com/prettier/prettier-vscode/issues/1515#issuecomment-801884216
+
+[*.{yml, yaml}]
+indent_size = 2
