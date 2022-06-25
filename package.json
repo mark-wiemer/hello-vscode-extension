@@ -14,7 +14,7 @@
         "lint": "npm run lint_inner && echo ✅ No issues",
         "lint_fix": "npm run lint_inner -- --fix",
         "lint_inner": "eslint src --ext ts --max-warnings=0",
-        "pretest": "npm run compile && npm run lint",
+        "pretest": "npm run compile",
         "test": "npm run test_unit && npm run test_grammar",
         "test_grammar": "vscode-tmgrammar-snap src/test/suite/grammar/samples/*.abc",
         "test_unit": "node ./out/test/runTest.js",
