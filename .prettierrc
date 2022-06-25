@@ -1,4 +1,4 @@
-# Need to explicitly `useTabs: false` in GitHub actions pipeline :( see #22
+# Need to explicitly `useTabs: false` in GitHub actions pipeline :( see #21
 useTabs: false
 singleQuote: true
 tabWidth: 4
