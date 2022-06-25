@@ -1,3 +1,5 @@
+# Need to explicitly `useTabs: false` in GitHub actions pipeline :( see #22
+useTabs: false
 singleQuote: true
 tabWidth: 4
 trailingComma: all
