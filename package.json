@@ -1,19 +1,27 @@
 {
     "name": "helloworld",
     "displayName": "HelloWorld",
-    "description": "",
     "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.67.0"
-    },
+    "description": "",
     "categories": [
         "Other"
     ],
-    "activationEvents": [
-        "onCommand:helloworld.helloWorld",
-        "onCommand:helloworld.time"
-    ],
     "main": "./out/extension.js",
+    "scripts": {
+        "compile": "npm run compile_ts && npm run compile_grammar",
+        "compile_grammar": "npx js-yaml syntaxes/abc.tmGrammar.yaml > syntaxes/abc.tmGrammar.json",
+        "compile_ts": "tsc -p ./",
+        "lint": "npm run lint_inner && echo ✅ No issues",
+        "lint_fix": "npm run lint_inner -- --fix",
+        "lint_inner": "eslint src --ext ts --max-warnings=0",
+        "pretest": "npm run compile && npm run lint",
+        "test": "npm run test_unit && npm run test_grammar",
+        "test_grammar": "vscode-tmgrammar-snap src/test/suite/grammar/samples/*.abc",
+        "test_unit": "node ./out/test/runTest.js",
+        "validate": "npm run lint && npm run compile && npm run test",
+        "vscode:prepublish": "npm run compile",
+        "watch": "tsc -watch -p ./"
+    },
     "contributes": {
         "commands": [
             {
@@ -25,6 +33,13 @@
                 "title": "Current time"
             }
         ],
+        "grammars": [
+            {
+                "language": "abc",
+                "scopeName": "source.abc",
+                "path": "./syntaxes/abc.tmGrammar.json"
+            }
+        ],
         "languages": [
             {
                 "id": "abc",
@@ -32,30 +47,12 @@
                     ".abc"
                 ]
             }
-        ],
-        "grammars": [
-            {
-                "language": "abc",
-                "scopeName": "source.abc",
-                "path": "./syntaxes/abc.tmGrammar.json"
-            }
         ]
     },
-    "scripts": {
-        "vscode:prepublish": "npm run compile",
-        "compile": "npm run compile_ts && npm run compile_grammar",
-        "compile_ts": "tsc -p ./",
-        "compile_grammar": "npx js-yaml syntaxes/abc.tmGrammar.yaml > syntaxes/abc.tmGrammar.json",
-        "watch": "tsc -watch -p ./",
-        "pretest": "npm run compile && npm run lint",
-        "lint": "npm run lint_inner && echo ✅ No issues",
-        "lint_fix": "npm run lint_inner -- --fix",
-        "lint_inner": "eslint src --ext ts --max-warnings=0",
-        "test": "npm run test_unit && npm run test_grammar",
-        "test_unit": "node ./out/test/runTest.js",
-        "test_grammar": "vscode-tmgrammar-snap src/test/suite/grammar/samples/*.abc",
-        "validate": "npm run lint && npm run compile && npm run test"
-    },
+    "activationEvents": [
+        "onCommand:helloworld.helloWorld",
+        "onCommand:helloworld.time"
+    ],
     "devDependencies": {
         "@types/glob": "^7.2.0",
         "@types/mocha": "^9.1.1",
@@ -70,5 +67,8 @@
         "mocha": "^10.0.0",
         "typescript": "^4.7.2",
         "vscode-tmgrammar-test": "^0.1.1"
+    },
+    "engines": {
+        "vscode": "^1.67.0"
     }
 }
