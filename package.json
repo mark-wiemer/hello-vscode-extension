@@ -48,10 +48,13 @@
         "compile_grammar": "npx js-yaml syntaxes/abc.tmGrammar.yaml > syntaxes/abc.tmGrammar.json",
         "watch": "tsc -watch -p ./",
         "pretest": "npm run compile && npm run lint",
-        "lint": "eslint src --ext ts",
+        "lint": "npm run lint_inner && echo ✅ No issues",
+        "lint_fix": "npm run lint_inner -- --fix",
+        "lint_inner": "eslint src --ext ts --max-warnings=0",
         "test": "npm run test_unit && npm run test_grammar",
         "test_unit": "node ./out/test/runTest.js",
-        "test_grammar": "vscode-tmgrammar-snap src/test/suite/grammar/samples/*.abc"
+        "test_grammar": "vscode-tmgrammar-snap src/test/suite/grammar/samples/*.abc",
+        "validate": "npm run lint && npm run compile && npm run test"
     },
     "devDependencies": {
         "@types/glob": "^7.2.0",
