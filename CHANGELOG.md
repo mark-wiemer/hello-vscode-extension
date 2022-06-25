@@ -1,5 +1,5 @@
 # Change Log
 
-## (Unreleased)
+## [Unreleased]
 
 -   Initial release

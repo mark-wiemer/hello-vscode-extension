@@ -1,7 +1,0 @@
-# Copied from `.gitignore`
-out
-dist
-node_modules
-.vscode-test/
-*.vsix
-syntaxes/*.json
