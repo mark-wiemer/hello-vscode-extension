@@ -11,13 +11,13 @@
         "compile": "npm run compile_ts && npm run compile_grammar",
         "compile_grammar": "npx js-yaml syntaxes/abc.tmGrammar.yaml > syntaxes/abc.tmGrammar.json",
         "compile_ts": "tsc -p ./",
-        "format": "npm run format_inner -- --check",
-        "format_fix": "npm run format_inner -- --write",
-        "format_inner": "prettier . ",
+        "format": "npm run format_inner -- --check .",
+        "format_fix": "npm run format_inner -- --write .",
+        "format_inner": "prettier",
         "lint": "npm run quality && npm run format",
-        "quality": "npm run quality_inner && echo ✅ No problems",
-        "quality_fix": "npm run quality_inner -- --fix",
-        "quality_inner": "eslint src --ext ts --max-warnings=0",
+        "quality": "npm run quality_inner -- src && echo ✅ No problems",
+        "quality_fix": "npm run quality_inner -- --fix src",
+        "quality_inner": "eslint --ext ts --max-warnings=0",
         "pretest": "npm run compile",
         "test": "npm run test_unit && npm run test_grammar",
         "test_grammar": "vscode-tmgrammar-snap src/test/suite/grammar/samples/*.abc",
@@ -80,7 +80,10 @@
         "vscode": "^1.67.0"
     },
     "lint-staged": {
-        "*.js": "eslint --ext ts --max-warnings=0",
-        "*.--check": "prettier --write"
+        "*": "prettier --check",
+        "src/*": [
+            "npm run quality_inner",
+            "tsc --noEmit"
+        ]
     }
 }

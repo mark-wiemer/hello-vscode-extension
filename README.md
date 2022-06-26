@@ -16,6 +16,20 @@ Unit tests focus on miscellaneous functionality of the app. They're written foll
 
 Grammar tests focus on the tokenization via the TextMate grammar detailed in [Syntax Highlight Guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide)
 
+## Engineering quality
+
+Another main goal is to create a project that's very easy to maintain.
+
+-   Make use of automation whenever possible
+-   Automated checks at PR time
+-   Pre-commit hooks for formatting and linting
+
+### Pre-commit hooks
+
+Pre-commit hooks are setup using `husky` and `lint-staged`. When a commit is attempted, `lint-staged` validates the staged files for correctness (compilation errors, lint problems, and formatting). If anything is wrong, the commit will fail.
+
+To test that pre-commit hooks have been set up correctly, introduce compilation, lint, or formatting issues to a file. Save the file without fixing these issues. Then stage it and try to commit. The relevant check should fail, the commit should be aborted, and the filesystem should not be changed.
+
 ## Syntax Highlighting
 
 Syntax Highlighting support follows the official [Syntax Highlight Guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide).
