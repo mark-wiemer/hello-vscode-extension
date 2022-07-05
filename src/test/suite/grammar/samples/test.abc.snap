@@ -8,7 +8,7 @@
 >)
 #^ source.abc expression.group punctuation.paren.close
 >x
-#^^ source.abc
+#^ source.abc keyword.letter
 >(
 #^ source.abc expression.group punctuation.paren.open
 >    (
@@ -18,7 +18,10 @@
 #^^^^^^^^ source.abc expression.group expression.group
 #        ^ source.abc expression.group expression.group keyword.letter
 >        xyz
-#^^^^^^^^^^^^ source.abc expression.group expression.group
+#^^^^^^^^ source.abc expression.group expression.group
+#        ^ source.abc expression.group expression.group keyword.letter
+#         ^ source.abc expression.group expression.group keyword.letter
+#          ^ source.abc expression.group expression.group keyword.letter
 >    )
 #^^^^ source.abc expression.group expression.group
 #    ^ source.abc expression.group expression.group punctuation.paren.close
