@@ -8,7 +8,7 @@
           'patterns':
             [{ 'include': '#letter' }, { 'include': '#paren-expression' }],
         },
-      'letter': { 'match': 'a|b|c', 'name': 'keyword.letter' },
+      'letter': { 'match': '[a-z]', 'name': 'keyword.letter' },
       'paren-expression':
         {
           'begin': "\\(",
