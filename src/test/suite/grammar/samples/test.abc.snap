@@ -25,6 +25,8 @@
 >    )
 #^^^^ source.abc expression.group expression.group
 #    ^ source.abc expression.group expression.group punctuation.paren.close
+>    Q
+#^^^^^^ source.abc expression.group
 >)
 #^ source.abc expression.group punctuation.paren.close
 >(
