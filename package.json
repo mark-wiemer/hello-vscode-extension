@@ -52,7 +52,11 @@
                 "id": "abc",
                 "extensions": [
                     ".abc"
-                ]
+                ],
+                "icon": {
+                    "dark": "./icons/ahk-file-icon-dark.svg",
+                    "light": "./icons/ahk-file-icon-light.svg"
+                }
             }
         ]
     },
