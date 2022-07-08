@@ -21,6 +21,7 @@
         "format_fix": "npm run format_inner -- --write .",
         "format_inner": "prettier",
         "lint": "npm run quality && npm run format && npm run packagejson",
+        "lint_fix": "npm run quality_fix && npm run format_fix",
         "packagejson": "sort-package-json --check",
         "packagejson_fix": "sort-package-json",
         "prepare": "husky install",
