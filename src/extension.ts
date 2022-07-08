@@ -18,7 +18,9 @@ export function activate(context: vscode.ExtensionContext) {
         () => {
             // The code you place here will be executed every time your command is executed
             // Display a message box to the user
-            vscode.window.showInformationMessage('Hello VS Code 2022');
+            vscode.window.showInformationMessage(
+                'Hello VS Code 2023 (the future!!)',
+            );
         },
     );
     const timeDisposable = vscode.commands.registerCommand(
