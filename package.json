@@ -1,8 +1,8 @@
 {
-    "name": "helloworld",
-    "displayName": "HelloWorld",
+    "name": "helloworld-2022",
+    "displayName": "HelloWorld 2022",
     "version": "0.0.1",
-    "description": "",
+    "description": "Because helloworld was taken??",
     "categories": [
         "Other"
     ],
@@ -11,7 +11,7 @@
         "url": "https://github.com/mark-wiemer/vscode-helloworld.git"
     },
     "license": "MIT",
-    "publisher": "Mark Wiemer",
+    "publisher": "mark-wiemer",
     "main": "./out/extension.js",
     "scripts": {
         "compile": "npm run compile_ts && npm run compile_grammar",
