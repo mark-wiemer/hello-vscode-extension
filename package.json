@@ -10,6 +10,8 @@
         "type": "git",
         "url": "https://github.com/mark-wiemer/vscode-helloworld.git"
     },
+    "license": "MIT",
+    "publisher": "Mark Wiemer",
     "main": "./out/extension.js",
     "scripts": {
         "compile": "npm run compile_ts && npm run compile_grammar",
@@ -18,7 +20,9 @@
         "format": "npm run format_inner -- --check .",
         "format_fix": "npm run format_inner -- --write .",
         "format_inner": "prettier",
-        "lint": "npm run quality && npm run format",
+        "lint": "npm run quality && npm run format && npm run packagejson",
+        "packagejson": "sort-package-json --check",
+        "packagejson_fix": "sort-package-json",
         "prepare": "husky install",
         "quality": "npm run quality_inner -- src && echo ✅ No problems",
         "quality_fix": "npm run quality_inner -- --fix src",
@@ -73,6 +77,9 @@
         "src/*": [
             "npm run quality_inner",
             "tsc --noEmit"
+        ],
+        "package.json": [
+            "npm run packagejson"
         ]
     },
     "devDependencies": {
@@ -90,6 +97,7 @@
         "lint-staged": "^13.0.3",
         "mocha": "^10.0.0",
         "prettier": "2.6.1",
+        "sort-package-json": "^1.57.0",
         "typescript": "^4.7.2",
         "vscode-tmgrammar-test": "^0.1.1"
     },
