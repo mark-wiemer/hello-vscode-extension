@@ -15,6 +15,7 @@
         "format_fix": "npm run format_inner -- --write .",
         "format_inner": "prettier",
         "lint": "npm run quality && npm run format",
+        "prepare": "husky install",
         "quality": "npm run quality_inner -- src && echo ✅ No problems",
         "quality_fix": "npm run quality_inner -- --fix src",
         "quality_inner": "eslint --ext ts --max-warnings=0",
@@ -26,8 +27,7 @@
         "test_unit": "node ./out/test/runTest.js",
         "validate": "npm run lint && npm run test",
         "vscode:prepublish": "npm run compile",
-        "watch": "tsc -watch -p ./",
-        "prepare": "husky install"
+        "watch": "tsc -watch -p ./"
     },
     "contributes": {
         "commands": [
@@ -64,6 +64,13 @@
         "onCommand:helloworld.helloWorld",
         "onCommand:helloworld.time"
     ],
+    "lint-staged": {
+        "*": "prettier --check",
+        "src/*": [
+            "npm run quality_inner",
+            "tsc --noEmit"
+        ]
+    },
     "devDependencies": {
         "@types/glob": "^7.2.0",
         "@types/mocha": "^9.1.1",
@@ -84,12 +91,5 @@
     },
     "engines": {
         "vscode": "^1.67.0"
-    },
-    "lint-staged": {
-        "*": "prettier --check",
-        "src/*": [
-            "npm run quality_inner",
-            "tsc --noEmit"
-        ]
     }
 }
