@@ -9,6 +9,7 @@
 1. Open a PR (title e.g. `v1.2.3`, description matching changelog entry)
 1. Merge to main
 1. On local machine, checkout `main`
+1. `git pull`
 1. `git tag 1.2.3` (no prefix)
 1. `git push origin 1.2.3`
     > This will automatically publish a new release via the [`deploy` GitHub action](https://github.com/mark-wiemer/vscode-helloworld/actions/workflows/deploy.yml)
