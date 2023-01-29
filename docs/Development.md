@@ -18,4 +18,5 @@
 
 1. [Deploy workflow](https://github.com/mark-wiemer/vscode-helloworld/actions/workflows/deploy.yml)
 1. [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=mark-wiemer.helloworld-2022)
+    1. [Publisher view](https://marketplace.visualstudio.com/manage/publishers/mark-wiemer)
 1. [Open VSX Marketplace](https://open-vsx.org/extension/mark-wiemer/helloworld-2022)
