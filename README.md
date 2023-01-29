@@ -55,3 +55,7 @@ Resources:
 -   [Syntax Highlight Guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide)
 -   [microsoft/vscode-textmate](https://github.com/Microsoft/vscode-textmate) is the library that tokenizes code via TextMate grammars
 -   [PanAeon/vscode-tmgrammar-test](https://github.com/PanAeon/vscode-tmgrammar-test) is recommended by Microsoft to write unit tests for TextMate grammars
+
+## Further reading
+
+See the `/docs` folder for additional documentation.
