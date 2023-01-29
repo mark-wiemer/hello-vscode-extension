@@ -13,3 +13,9 @@
 1. `git push origin 1.2.3`
     > This will automatically publish a new release via the [`deploy` GitHub action](https://github.com/mark-wiemer/vscode-helloworld/actions/workflows/deploy.yml)
 1. Create a release for the tag, with title and description matching `Changelog.md`
+
+## Validate deployment
+
+1. [Deploy workflow](https://github.com/mark-wiemer/vscode-helloworld/actions/workflows/deploy.yml)
+1. [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=mark-wiemer.helloworld-2022)
+1. [Open VSX Marketplace](https://open-vsx.org/extension/mark-wiemer/helloworld-2022)
