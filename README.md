@@ -30,7 +30,7 @@ Pre-commit hooks are setup using `husky` and `lint-staged`. When a commit is att
 
 To test that pre-commit hooks have been set up correctly, introduce compilation, lint, or formatting issues to a file. Save the file without fixing these issues. Then stage it and try to commit. The relevant check should fail, the commit should be aborted, and the filesystem should not be changed.
 
-## Syntax Highlighting
+## Syntax highlighting
 
 Syntax Highlighting support follows the official [Syntax Highlight Guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide).
 
