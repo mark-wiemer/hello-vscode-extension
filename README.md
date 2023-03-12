@@ -32,7 +32,7 @@ To test that pre-commit hooks have been set up correctly, introduce compilation,
 
 ## Syntax highlighting
 
-Syntax Highlighting support follows the official [Syntax Highlight Guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide).
+Syntax highlighting support follows [VS Code's syntax highlighting guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide).
 
 This extension...
 
