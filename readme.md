@@ -1,37 +1,36 @@
 <div align="center">
-<h1>AHK++</h1>
-<p font-size="larger">Full language support for AHK v1 and AHK v2</p>
+    <h1>AHK++</h1>
+    <h2>Full language support for AHK v1 and AHK v2</h2>
+    <ul style="list-style: none;">
+        <li>IntelliSense</li>
+        <li>Syntax highlighting</li>
+        <li>Debug support</li>
+        <li>Formatting (customizable!)</li>
+        <li>Quick help</li>
+        <li>...and more</li>
+    </ul>
 </div>
-
--   IntelliSense
--   syntax highlighting
--   debug support
--   formatting
--   quick help
--   ...and more!
 
 ## Install
 
 Install from VS Code or install from [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=mark-wiemer.vscode-autohotkey-plus-plus).
 
-## AHK v2 full support in pre-release!
+## AHK v2 full support is here!
 
-AutoHotkey v2 support has been a [long-requested feature](https://github.com/mark-wiemer-org/ahkpp/issues/96), and v5.0.0 supports many key features. The latest [🧪 pre-release version](https://code.visualstudio.com/updates/v1_63#_pre-release-extensions), v5.1.0, adds full v2 support!
-
-Supported features include:
+AHK++ 6 now incorporates [AutoHotkey v2 Language Support by thqby](https://marketplace.visualstudio.com/items?itemName=thqby.vscode-autohotkey2-lsp), meaning full AHK v2 support:
 
 -   Running and debugging v1 and v2 scripts without changing settings
 -   Full syntax highlighting for v2 scripts
--   "Open help" (Ctrl + F1) opens language-specific help (and includes your text selection!)
+-   "Open help" (Ctrl + F1) opens language-specific help (and includes your text selection)
 -   Unique icons for v1 (blue) and v2 (green)
--   Rich IntelliSense support with snippets and hover text (🧪 pre-release only)
--   Formatting files (🧪 pre-release only)
+-   Rich IntelliSense support with snippets, hover text, and suggestions
+-   Formatting files with many customized options
 
-For known issues, see [the changelog](./Changelog.md)
+For all changes, see [the changelog](./Changelog.md)
 
-Please [🐛 report any issues](https://github.com/mark-wiemer-org/ahkpp/issues/new/choose), it helps bring full v2 support to the release version faster 🧑‍💻
+As always, please [🐛 report any issues](https://github.com/mark-wiemer-org/ahkpp/issues/new/choose)
 
-💚 Special thanks to [thqby](https://github.com/thqby), as this would not have been possible without thqby's open-source [AutoHotkey v2 Language Support](https://marketplace.visualstudio.com/items?itemName=thqby.vscode-autohotkey2-lsp)!
+💚 Special thanks again to [thqby](https://github.com/thqby), as this would not have been possible without thqby's open-source [AutoHotkey v2 Language Support](https://marketplace.visualstudio.com/items?itemName=thqby.vscode-autohotkey2-lsp)!
 
 ## Why AutoHotkey Plus Plus?
 
