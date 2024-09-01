@@ -1,8 +1,7 @@
 <div align="center">
 <h1>AHK++</h1>
+<p font-size="larger">Full language support for AHK v1 and AHK v2</p>
 </div>
-
-AutoHotkey Plus Plus (AHK++) provides AutoHotkey language support for VS Code. For AHK v1, this includes:
 
 -   IntelliSense
 -   syntax highlighting
