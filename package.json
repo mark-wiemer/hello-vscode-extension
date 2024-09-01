@@ -2,7 +2,7 @@
     "name": "helloworld-2022",
     "displayName": "HelloWorld 2022",
     "version": "0.2.3",
-    "description": "Because helloworld was taken??",
+    "description": "Because helloworld was taken!",
     "categories": [
         "Other"
     ],
@@ -69,10 +69,6 @@
             }
         ]
     },
-    "activationEvents": [
-        "onCommand:helloworld.helloWorld",
-        "onCommand:helloworld.time"
-    ],
     "lint-staged": {
         "*": "prettier --check",
         "src/*": [
@@ -103,6 +99,6 @@
         "vscode-tmgrammar-test": "^0.1.1"
     },
     "engines": {
-        "vscode": "^1.67.0"
+        "vscode": "^1.92.0"
     }
 }
