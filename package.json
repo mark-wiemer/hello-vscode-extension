@@ -29,6 +29,7 @@
         "lint": "npm run format && npm run eslint && npm run sort-package-json",
         "lint:ci": "npm run eslint && npm run sort-package-json",
         "package": "vsce package",
+        "publish": "vsce publish",
         "sort-package-json": "sort-package-json --check",
         "sort-package-json:fix": "sort-package-json",
         "test": "npm run test-grammar && npm run test-unit",
