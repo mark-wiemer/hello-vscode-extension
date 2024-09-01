@@ -27,8 +27,8 @@ jobs:
           cache: 'npm'
       - run: npm install
       # ubuntu "Failed to connect": see https://github.com/microsoft/vscode-test/issues/127
-      - run: xvfb-run -a npm run validate
+      - run: xvfb-run -a npm run validate:ci
         if: runner.os == 'Linux'
       # mac "CoreText note": https://github.com/electron/fiddle/issues/586
-      - run: npm run validate
+      - run: npm run validate:ci
         if: runner.os != 'Linux'
