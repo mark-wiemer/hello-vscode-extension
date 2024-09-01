@@ -1,14 +1,12 @@
 <div align="center">
     <h1>AHK++</h1>
     <h2>Full language support for AHK v1 and AHK v2</h2>
-    <ul style="list-style: none;">
-        <li>IntelliSense</li>
-        <li>Syntax highlighting</li>
-        <li>Debug support</li>
-        <li>Formatting (customizable!)</li>
-        <li>Quick help</li>
-        <li>...and more</li>
-    </ul>
+        <div>IntelliSense</div>
+        <div>Syntax highlighting</div>
+        <div>Debug support</div>
+        <div>Formatting (customizable!)</div>
+        <div>Quick help</div>
+        <div>...and more</div>
 </div>
 
 ## Install
