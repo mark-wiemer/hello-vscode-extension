@@ -14,8 +14,8 @@ jobs:
     strategy:
       matrix:
         # TODO add macos-latest and fix https://github.com/mark-wiemer/vscode-helloworld/issues/10
-        os: [ubuntu-latest, windows-latest]
-        node-version: [16.x]
+        os: [windows-latest]
+        node-version: [20.x]
     runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout
