@@ -15,7 +15,7 @@
 
 Install from VS Code or install from [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=mark-wiemer.vscode-autohotkey-plus-plus).
 
-## AHK v2 full support is here!
+## AHK v2 full support is here! 🥂
 
 AHK++ 6 now incorporates [AutoHotkey v2 Language Support by thqby](https://marketplace.visualstudio.com/items?itemName=thqby.vscode-autohotkey2-lsp), meaning full AHK v2 support:
 
@@ -26,21 +26,17 @@ AHK++ 6 now incorporates [AutoHotkey v2 Language Support by thqby](https://marke
 -   Rich IntelliSense support with snippets, hover text, and suggestions
 -   Formatting files with many customized options
 
-For all changes, see [the changelog](./Changelog.md)
+For all changes, including breaking changes, see [the changelog](./Changelog.md)
 
 As always, please [🐛 report any issues](https://github.com/mark-wiemer-org/ahkpp/issues/new/choose)
 
 💚 Special thanks again to [thqby](https://github.com/thqby), as this would not have been possible without thqby's open-source [AutoHotkey v2 Language Support](https://marketplace.visualstudio.com/items?itemName=thqby.vscode-autohotkey2-lsp)!
 
-## Why AutoHotkey Plus Plus?
+### ⛓️‍💥 Breaking changes
 
-AutoHotkey Plus Plus is one of many extensions that offer VS Code language support. So why should you use this one?
+When adding all the new settings, VS Code's setting UX became overwhelming. Settings are now organized into flat objects, which should improve UX and reduce the need for breaking changes in the future! See [the changelog](./Changelog.md) for details.
 
--   **Supports both v1 and v2**: AHK++ supports both AHK v1 and v2, making it the only extension to support both major versions of AutoHotkey!
--   **Actively maintained**: Any issues encountered while using this extension can be reported and fixed. With other extensions, anything that's broken will stay broken forever. You can report any issues with AHK++ (and view all issues) through the [issue tracker](https://github.com/mark-wiemer-org/ahkpp/issues).
--   **IntelliSense**: Smart code completion, syntax highlighting, code navigation, and more.
--   **Debug support**: Run and debug AHK scripts from VS Code.
--   **New features**: Another benefit to active maintenance is that AHK++ can add new features as users request them. For example, quick help, formatter directives, and custom new file templates were all added based on user feedback!
+---
 
 ## Commands
 
