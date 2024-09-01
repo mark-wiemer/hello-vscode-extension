@@ -1,4 +1,6 @@
-# AutoHotkey Plus Plus (AHK++)
+<div align="center">
+<h1>AHK++</h1>
+</div>
 
 AutoHotkey Plus Plus (AHK++) provides AutoHotkey language support for VS Code. For AHK v1, this includes:
 

@@ -24,7 +24,6 @@
         "lint_fix": "npm run quality_fix && npm run format_fix",
         "packagejson": "sort-package-json --check",
         "packagejson_fix": "sort-package-json",
-        "prepare": "husky install",
         "quality": "npm run quality_inner -- src && echo ✅ No problems",
         "quality_fix": "npm run quality_inner -- --fix src",
         "quality_inner": "eslint --ext ts --max-warnings=0",
@@ -69,16 +68,6 @@
             }
         ]
     },
-    "lint-staged": {
-        "*": "prettier --check",
-        "src/*": [
-            "npm run quality_inner",
-            "tsc --noEmit"
-        ],
-        "package.json": [
-            "npm run packagejson"
-        ]
-    },
     "devDependencies": {
         "@types/glob": "^7.2.0",
         "@types/mocha": "^9.1.1",
@@ -89,11 +78,9 @@
         "@vscode/test-electron": "^2.1.3",
         "eslint": "^8.16.0",
         "glob": "^8.0.3",
-        "husky": "^8.0.1",
         "js-yaml": "^4.1.0",
-        "lint-staged": "^13.0.3",
         "mocha": "^10.0.0",
-        "prettier": "2.6.1",
+        "prettier": "^3.3.3",
         "sort-package-json": "^1.57.0",
         "typescript": "^4.7.2",
         "vscode-tmgrammar-test": "^0.1.1"
