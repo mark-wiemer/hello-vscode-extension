@@ -1,12 +1,12 @@
 <div align="center">
     <h1>AHK++</h1>
     <h2>Full language support for AHK v1 and AHK v2</h2>
-        <div>IntelliSense</div>
-        <div>Syntax highlighting</div>
-        <div>Debug support</div>
-        <div>Formatting (customizable!)</div>
-        <div>Quick help</div>
-        <div>...and more</div>
+    <div>IntelliSense</div>
+    <div>Syntax highlighting</div>
+    <div>Debug support</div>
+    <div>Formatting (customizable!)</div>
+    <div>Quick help</div>
+    <div>...and more</div>
 </div>
 
 ## Install
@@ -17,10 +17,10 @@ Install from VS Code or install from [VS Code Marketplace](https://marketplace.v
 
 AHK++ 6 now incorporates [AutoHotkey v2 Language Support by thqby](https://marketplace.visualstudio.com/items?itemName=thqby.vscode-autohotkey2-lsp), meaning full AHK v2 support:
 
--   Running and debugging v1 and v2 scripts without changing settings
+-   Running, debugging, and stopping v1 and v2 scripts without changing settings
 -   Full syntax highlighting for v2 scripts
--   "Open help" (Ctrl + F1) opens language-specific help (and includes your text selection)
--   Unique icons for v1 (blue) and v2 (green)
+-   "Open help" (`Ctrl + F1`) opens language-specific help (and includes your text selection)
+-   Unique icons for AHK v1 (blue) and v2 (green)
 -   Rich IntelliSense support with snippets, hover text, and suggestions
 -   Formatting files with many customized options
 
@@ -45,6 +45,7 @@ With AHK++, you can compile, debug, and run your scripts with keyboard shortcuts
 -   Open help: `Ctrl + F1`
 -   Run: `Ctrl + F9`
 -   Run selection: `Ctrl + F8`
+-   Stop: `Ctrl + F6`
 
 ## Debug
 
