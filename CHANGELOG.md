@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.3.1 - 2024-09-01
+
+-   Add modified AHK logo as extension icon
+
 ## 0.3.0 - 2024-09-01
 
 -   Update banner color to light green with light theme
